@@ -1,0 +1,22 @@
+# STEPS
+
+1. Criar atalhos de terminal e de janela maxima
+2. Alterar a configuracao de visualizacao de pasta atual:
+	2.1 editar arquivo ~/.bashrc
+		vi ~/.bashrc 
+		# adicionar linha:
+		PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	
+	2.2 recarregar arquivo .bashrc
+		source ~/.bashrc
+
+3. configurar o terminal para tamanho de letra como 14
+4. adicionar o comando para abrir arquivos usando open
+	#!/bin/bash
+
+	if [ "$#" -eq 0 ]; then
+		xdg-open .
+	else
+		xdg-open $1
+	fi
+	
