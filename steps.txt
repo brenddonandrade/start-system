@@ -19,4 +19,5 @@
 	else
 		xdg-open $1
 	fi
-	
+5. instalar o vim
+	sudo dnf install vim	
