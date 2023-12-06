@@ -19,5 +19,8 @@
 	else
 		xdg-open $1
 	fi
-5. instalar o vim
+	
+5. Colocar comando no diretório disponível para todos usuários
+	sudo mv open /usr/local/bin
+6. instalar o vim
 	sudo dnf install vim	
